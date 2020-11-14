@@ -1,6 +1,12 @@
 import React from 'react';
 import './App.css';
-import Header from '../Header'
+import Header from '../Header';
+import Button from '../Button';
+
+
+function TestComponent (){
+   return <img width="16" src="https://img.icons8.com/pastel-glyph/2x/search--v1.png" alt="search icon"   />
+}
 
 
 function App() {
@@ -8,10 +14,23 @@ function App() {
     <div className="App">
 
       <Header title="AlgaStock"/>
+       
+      <div className="Container">
 
-      App
       
-    </div>
+
+        <Button  onClick= {() =>window.alert('teste')}
+          appendIcon = {<TestComponent/>}
+        >
+           
+         Alert
+
+        </Button>
+
+      </div>
+
+      </div>
+    
   );
 }
 
