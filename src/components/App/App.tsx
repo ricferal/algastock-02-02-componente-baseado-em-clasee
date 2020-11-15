@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React  from 'react';
 import './App.css';
 import Header from '../Header';
 import Button from '../../shared/Button';
@@ -12,8 +12,6 @@ function TestComponent (){
 
 function App() {
 
-  const [street, setStreet] = useState('');
-
 
   return (
     <div className="App">
@@ -21,18 +19,7 @@ function App() {
       <Header title="AlgaStock"/>
        
        <Container>
-          <ul>
-          {
-             ['ricferal','teste1','teste2','teste2'].map((name,index) =>{
-                return <li key={index}>
-                { name }
-               </li>
-             })
-
-          }
-
-
-          </ul>
+         
 
        </Container>
  
