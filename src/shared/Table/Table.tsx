@@ -17,7 +17,11 @@ const Table = () =>{
              <td>R$ 2,00</td>
              <td>10 unidades</td>
           </tr>
-
+          <tr>
+             <td>caderno</td>
+             <td>R$ 10,00</td>
+             <td>15 unidades</td>
+          </tr>
        
         </tbody>
 
