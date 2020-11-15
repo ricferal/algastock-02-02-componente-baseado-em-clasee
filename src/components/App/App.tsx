@@ -21,20 +21,19 @@ function App() {
       <Header title="AlgaStock"/>
        
        <Container>
-       <Button  onClick= {() =>window.alert('teste')}
-          appendIcon = {<TestComponent/>}
-        >
-           
-         Alert
+          <ul>
+          {
+             ['ricferal','teste1','teste2','teste2'].map((name,index) =>{
+                return <li key={index}>
+                { name }
+               </li>
+             })
 
-        </Button>
+          }
 
-        <Input 
-         label="Street"
-         placeholder="E..g.: 15th Av."
-         value = {street}
-         onChange = { e => setStreet(e.target.value)}
-        />
+
+          </ul>
+
        </Container>
  
       </div>
